@@ -8,7 +8,7 @@
 
 ### Microsserviços de gerenciamento de hospitais
 
-O microsserviço Hospital é utilizado pelo app [Dulce](https://dulce-work-schedule.github.io/2018.1-Dulce_App/) para gerenciar os setores da aplicação.
+O microsserviço Hospital é utilizado pelo app [Dulce](https://dulce-work-schedule.github.io/2018.1-Dulce_App/) para gerenciar os hospitais registrados na aplicação.
 
 ### Contribuição
 Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribuição](CONTRIBUTING.md) onde são explicados todos os passos para contribuir. Ahh, não esquece de ler nosso [código de conduta](CODE_OF_CONDUCT.md).   
