@@ -1,8 +1,8 @@
 version: '3.5'
 
 services:
-  sectorserver:
-    image: dulce/sector-server:test
+  hospitalserver:
+    image: dulce/hospital-server:test
     restart: always
     env_file:
       - ./env/coveralls.env

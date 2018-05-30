@@ -6,6 +6,7 @@ require('seneca')()
     port: process.env.MONGO_PORT
   })
  .use('seneca-amqp-transport')
+ .use('_hospital')
  .listen({
     type:'amqp',
     pin:'role:sector',
@@ -15,21 +16,3 @@ require('seneca')()
     url: 'amqp://'+ process.env.RABBITMQ_HOST
 })
 
-  .add('role:hospital,cmd:create', function create (msg,respond) {
-    var hospital = this.make('hospitals')
-    hospital.name = msg.name
-    hospital.save$(function(err,hospital){
-      respond(null,hospital)
-    })
-  })
-
-  .add('role:hospital, cmd:listHospital', function listHospital(msg, respond){
-    var hospital = this.make('hospitals');
-    hospital.list$({all$:true}, function(error,hospital){
-      respond(null,hospital);
-    });
-  })
-
-  .add('role:hospital, cmd:error', function error(msg, respond){
-    respond(null, {success:false, message: 'acesso negado'});
-  })

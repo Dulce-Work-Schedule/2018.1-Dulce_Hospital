@@ -1,14 +1,14 @@
 version: '3.5'
 
 services:
-  sectorserver:
-    image: dulce/sector-server:test
+  hospitalserver:
+    image: dulce/hospital-server:test
     build:
       context: ../../
       dockerfile: Docker/Test/Server/Dockerfile
 
-  sectorclient:
-    image: dulce/sector-client:test
+  hospitalclient:
+    image: dulce/hospital-client:test
     build:
       context: ../../
       dockerfile: Docker/Test/Client/Dockerfile
