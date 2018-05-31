@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  hospitalserver:
+    image: dulce/hospital-server:test
+    build:
+      context: ../../
+      dockerfile: Docker/Test/Server/Dockerfile
+
+  hospitalclient:
+    image: dulce/hospital-client:test
+    build:
+      context: ../../
+      dockerfile: Docker/Test/Client/Dockerfile
