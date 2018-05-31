@@ -6,7 +6,7 @@ Caso reste duvidas você também pode entrar em contato conosco criando uma issu
 ###### 2 - Em seguida siga os comandos para executar o ambiente de produção:  
 
 ```bash
-$ cd 2018.1-Dulce_Sector/Docker/Dev
+$ cd 2018.1-Dulce_Hospital/Docker/Dev
 ```
 ```bash
 $ sudo docker-compose -f build.yml  build  
@@ -17,7 +17,7 @@ $ sudo docker-compose -f start-deps.yml up -d
 ```
 
 ```bash
-$ sudo docker-compose -f start-sector.yml up -d
+$ sudo docker-compose -f start-hospital.yml up -d
 ```
 Pronto o seu ambiente de trabalho já está funcionando, acessar o ambiente de teste pelo terminal digite o seguinte comando:
 
@@ -29,13 +29,13 @@ $ sudo docker exec -it **NomeDoServiço** bash
 
 
 ```bash
-$ cd 2018.1-Dulce_Sector/Docker/Test
+$ cd 2018.1-Dulce_Hospital/Docker/Test
 ```
 ```bash
 $ sudo docker-compose -f build.yml  build
 ```
 ```bash
-$ sudo docker-compose -f start-sector.yml up -d
+$ sudo docker-compose -f start-hospital.yml up -d
 ```
 Pronto o seu ambiente de trabalho já está funcionando, acessar o ambiente de teste pelo terminal digite o seguinte comando:
 
