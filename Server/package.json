@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon sector.js",
+    "start": "nodemon hospital.js",
     "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "npm run cover && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "cover": "istanbul cover _mocha"
