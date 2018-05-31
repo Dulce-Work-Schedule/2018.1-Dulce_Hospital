@@ -48,7 +48,7 @@ var seneca = require('seneca')()
       .use('api')
       .client({
             type: 'amqp',
-            pin: 'role:sector',
+            pin: 'role:hospital',
             port: process.env.RABBITMQ_PORT,
             username: process.env.RABBITMQ_DEFAULT_USER,
             password: process.env.RABBITMQ_DEFAULT_PASS,

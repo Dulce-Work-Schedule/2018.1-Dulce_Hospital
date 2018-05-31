@@ -9,10 +9,9 @@ require('seneca')()
  .use('_hospital')
  .listen({
     type:'amqp',
-    pin:'role:sector',
+    pin:'role:hospital',
     port: process.env.RABBITMQ_PORT,
     username: process.env.RABBITMQ_DEFAULT_USER,
     password: process.env.RABBITMQ_DEFAULT_PASS,
     url: 'amqp://'+ process.env.RABBITMQ_HOST
 })
-
