@@ -5,10 +5,10 @@ services:
     image: dulce/hospital-server:test
     build:
       context: ../../
-      dockerfile: Docker/Test/Server/Dockerfile
+      dockerfile: Environments/Test/Server/Dockerfile
 
   hospitalclient:
     image: dulce/hospital-client:test
     build:
       context: ../../
-      dockerfile: Docker/Test/Client/Dockerfile
+      dockerfile: Environments/Test/Client/Dockerfile

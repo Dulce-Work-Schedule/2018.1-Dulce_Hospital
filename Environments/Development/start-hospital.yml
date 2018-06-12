@@ -5,8 +5,8 @@ services:
     image: dulce/hospital-server:dev
     restart: always
     env_file:
-      - ./env/mongo.env
-      - ./env/rabbitmq.env
+      - ./Variables/mongo.env
+      - ./Variables/rabbitmq.env
     ports:
       - 8080:8080
     networks:
@@ -17,7 +17,7 @@ services:
     image: dulce/hospital-client:dev
     restart: always
     env_file:
-      - ./env/rabbitmq.env
+      - ./Variables/rabbitmq.env
     ports:
       - 8083:8080
     networks:
