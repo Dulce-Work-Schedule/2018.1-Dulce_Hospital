@@ -14,7 +14,7 @@ module.exports = function (opitions) {
       respond(null,hospital);
     });
   })
-adasdasdads
+
   this.add('role:hospital, cmd:view', function view(msg, respond){
     var hospital = this.make('hospitals');
     var hospital_id = msg.hospital_id;
