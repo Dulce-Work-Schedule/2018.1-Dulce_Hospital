@@ -19,7 +19,9 @@ module.exports = function (opitions) {
     var hospital = this.make('hospitals');
     var hospital_id = msg.hospital_id;
 
-    hospital.list$({id:hospital_id}, function(error,hospital){
+    console.log(msg.hospital_id);
+
+    hospital.load$({id:hospital_id}, function(error,hospital){
       respond(null,hospital);
     });
   })

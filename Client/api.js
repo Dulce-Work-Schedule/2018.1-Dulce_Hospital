@@ -66,7 +66,7 @@ module.exports = function api(options){
     // else, everything sucess
     } else {
       this.act('role:hospital, cmd:view',{
-        hospital_id: hospital_id
+        hospital_id: hospital_id.value
       },respond)
     }
   });
@@ -83,11 +83,7 @@ module.exports = function api(options){
       map: {
         create: { POST:true },
         list: { GET:true },
-        view: { GET:true,
-                    auth: {
-                      strategy: 'jwt',
-                      fail: '/api/hospital/error',
-                    }},
+        view: { GET:true},
         error: {GET:true}
       }
     }}, respond)
