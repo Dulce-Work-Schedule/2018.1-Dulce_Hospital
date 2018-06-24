@@ -9,6 +9,9 @@ services:
       - ./Variables/rabbitmq.env
     ports:
       - 8080:8080
+    volumes:
+      - ../../Server:/usr/src/app
+      - /usr/src/app/node_modules
     networks:
       - dulce-db
       - dulce-rabbitmq
@@ -20,6 +23,9 @@ services:
       - ./Variables/rabbitmq.env
     ports:
       - 8083:8080
+    volumes:
+      - ../../Client:/usr/src/app
+      - /usr/src/app/node_modules
     networks:
       - dulce-rabbitmq
 
