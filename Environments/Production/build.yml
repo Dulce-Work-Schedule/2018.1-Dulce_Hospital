@@ -1,13 +1,13 @@
 version: '3.5'
 
 services:
-  userserver:
+  hospitalserver:
     image: dulce/hospital-server:prod
     build:
       context: ../../
       dockerfile: Environments/Production/Server/Dockerfile
 
-  userclient:
+  hospitalclient:
     image: dulce/hospital-client:prod
     build:
       context: ../../
